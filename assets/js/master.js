@@ -45,3 +45,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //------End custom Ajax Search box
 //------End custom Ajax Search box
+$("#normalize").selectize({ normalize: true });

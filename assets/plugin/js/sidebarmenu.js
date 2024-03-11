@@ -1,8 +1,6 @@
 !(function (s) {
   "use strict";
 
-  $("#normalize").selectize({ normalize: true });
-
   s("#side-menu").metisMenu(),
     s(".vertical-menu-btn").on("click", function (e) {
       e.preventDefault(),
