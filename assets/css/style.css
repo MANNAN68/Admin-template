@@ -53,9 +53,10 @@ body {
   width: calc(100% - 80px);
   transition: 0.4s all;
 }
-
 .main-content {
   padding: 130px 30px 50px 30px;
+  min-height: calc(100vh - 70px);
+  max-height: fit-content;
 }
 /* layout css code */
 .layout-left .barnd-logo {
@@ -75,7 +76,6 @@ body {
 .vertical-collpsed .barnd-logo {
   padding: 31px 0;
 }
-
 .navbar-action .action-link {
   width: 48px;
   height: 48px;
@@ -90,7 +90,6 @@ body {
   width: auto;
   height: auto;
 }
-
 .navbar-action .badge {
   position: absolute;
   top: 0px;
@@ -100,12 +99,17 @@ body {
   width: 352px;
   padding: 10px;
   border: 1px solid var(--bs-neutral-300);
+  transform-origin: top right;
+  transition: 0.4s ease-in-out;
 }
-
 .profile .dropdown-menu {
   width: 270px;
   padding: 14px 24px 24px 24px;
   border: 0px;
+  box-shadow: 0px 2px 4px -4px rgba(15, 28, 51, 0.04),
+    0px 3px 8px -2px rgba(15, 28, 51, 0.1);
+  transform-origin: top right;
+  transition: 0.4s ease-in-out;
 }
 .profile .nav-item .nav-link {
   font-weight: 400;
@@ -120,11 +124,9 @@ body {
 .profile .nav-link:hover {
   color: var(--bs-primary-500);
 }
-
 .profile .nav-link:hover svg .my_acc {
   stroke: var(--bs-primary-500);
 }
-
 .profile .nav-link:hover svg .setting {
   fill: var(--bs-primary-500);
 }
@@ -142,7 +144,6 @@ body {
   padding: 0.688rem 0.75rem;
   padding-left: 48px;
 }
-
 .search_result li a p {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -150,7 +151,6 @@ body {
   overflow: hidden;
   margin-right: 20px;
 }
-
 .navbar-action .profile .online {
   position: absolute;
   bottom: 2px;
@@ -161,7 +161,6 @@ body {
   border: 3px solid var(--bs-white);
   background: var(--bs-primary-500);
 }
-
 .navbar-action .profile .online.active {
   background: var(--bs-primary-500);
 }
@@ -190,22 +189,9 @@ body {
 .modal-dialog {
   top: 12%;
 }
-
 .modal-body {
   padding: 0 30px 30px 30px;
 }
 
 @media only screen and (max-width: 1366px) {
-  .data_table {
-    width: 100%;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-  .data_table .table {
-    width: 1100px;
-  }
-  .data_table::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-  }
 }

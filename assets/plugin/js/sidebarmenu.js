@@ -1,6 +1,8 @@
 !(function (s) {
   "use strict";
 
+  $("#normalize").selectize({ normalize: true });
+
   s("#side-menu").metisMenu(),
     s(".vertical-menu-btn").on("click", function (e) {
       e.preventDefault(),
@@ -42,7 +44,5 @@
           .parent()
           .parent()
           .addClass("mm-active"));
-    }),
-    $(".numberup").counterUp({ time: 1000 });
-  Waves.init();
+    });
 })(jQuery);
